@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/mediaQueries.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Raleway:wght@200;400;500;700;900&display=swap"
+      rel="stylesheet"
+    />
+    <title>AluraGeek - Ecommerce</title>
+  </head>
+  <body>
+    <header class="header">
+      <div class="header__text">
+        <a class="header__logo" href="#">
+          <img src="assets/img/Logo.svg" alt="" />
+        </a>
+        <input
+          class="header__buscador"
+          type="text"
+          placeholder="¿Qué deseas buscar?"
+        />
+      </div>
+      <a class="header__btn" href="#">Login</a>
+    </header>
+
+    <section class="hero__container">
+      <article class="hero__content">
+        <h1 class="hero__content--title">Febrero Promocional</h1>
+        <p class="hero__content--subtitle">
+          Productos seleccionados con 33% de descuento
+        </p>
+        <a class="hero__content--btn" href="#">Ver Consolas</a>
+      </article>
+    </section>
+
+    <main class="container">
+      <section class="productos">
+        <article class="productos__text">
+          <h2>Star Wars</h2>
+          <a href="#"
+            >Ver todos
+            <img src="assets/img/arrow__rigth.svg" alt="" />
+          </a>
+        </article>
+        <article class="productos__container" id="StarWars"></article>
+      </section>
+
+      <section class="productos">
+        <article class="productos__text">
+          <h2>Consolas</h2>
+          <a href="#"
+            >Ver todos
+            <img src="assets/img/arrow__rigth.svg" alt="" />
+          </a>
+        </article>
+        <article class="productos__container" id="consolas"></article>
+      </section>
+
+      <section class="productos">
+        <article class="productos__text">
+          <h2>Diversos</h2>
+          <a href="#"
+            >Ver todos
+            <img src="assets/img/arrow__rigth.svg" alt="" />
+          </a>
+        </article>
+        <article class="productos__container" id="diversos"></article>
+      </section>
+    </main>
+    <section class="contacto">
+      <article class="contacto__text">
+        <img class="contacto__logo" src="assets/img/Logo.svg" alt="AluraGeek" />
+
+        <ul class="contacto__menu">
+          <li>
+            <a href="#">Quienes somos</a>
+          </li>
+          <li>
+            <a href="#">Políticas de privacidad</a>
+          </li>
+          <li>
+            <a href="#">Programa de fidelidad</a>
+          </li>
+          <li>
+            <a href="#">Nuestras tiendas</a>
+          </li>
+          <li>
+            <a href="#">Quiero ser franquiciado</a>
+          </li>
+          <li>
+            <a href="#">Anúncie aqui</a>
+          </li>
+        </ul>
+      </article>
+
+      <form class="contact__form" action="" class="" novalidate>
+        <h3>Hable con nosotros</h3>
+
+        <div class="contact__form--nombre">
+          <label for="nombre">Nombre:</label>
+          <input type="text" id="nombre" placeholder="" />
+        </div>
+        <textarea
+          name=""
+          id="mensaje"
+          cols="30"
+          rows="10"
+          placeholder="Escribe tu mensaje"
+        ></textarea>
+
+        <button type="submit" class="btn">Enviar mensaje</button>
+      </form>
+    </section>
+
+    <footer class="footer">
+      <p>Desarrollado por Fernando Diaz</p>
+      <span>2022</span>
+    </footer>
+
+    <template id="productos">
+      <div class="productos__template">
+        <div class="productos__img">
+          <img src="" alt="Productos" id="templateImg" />
+        </div>
+        <div class="productos__content">
+          <h3 class="productos__title" id="title"></h3>
+          <p id="price" class="productos__price"></p>
+          <a class="productos__btn" id="verProduct" href="#" target="_blank">
+            Ver producto
+          </a>
+        </div>
+      </div>
+    </template>
+
+    <script src="js/main.js" type="module"></script>
+  </body>
+</html>
