@@ -1,0 +1,11 @@
+.form__container {
+    height: 70vh;
+}
+.form__form {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+.form__form h1 {
+    text-align: center;
+}

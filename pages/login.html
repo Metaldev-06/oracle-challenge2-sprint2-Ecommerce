@@ -4,8 +4,9 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="css/style.css" />
-    <link rel="stylesheet" href="css/mediaQueries.css" />
+    <link rel="stylesheet" href="/css/style.css" />
+    <link rel="stylesheet" href="/css/mediaQueries.css" />
+    <link rel="stylesheet" href="/css/login.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -18,7 +19,7 @@
     <header class="header">
       <div class="header__text">
         <a class="header__logo" href="/">
-          <img src="assets/img/Logo.svg" alt="" />
+          <img src="/assets/img/Logo.svg" alt="AluraGeek" />
         </a>
         <input
           class="header__buscador"
@@ -31,56 +32,24 @@
           alt=""
         />
       </div>
-      <a class="header__btn" href="/pages/login.html">Login</a>
+      <a class="header__btn" href="#">Login</a>
     </header>
 
-    <section class="hero__container">
-      <article class="hero__content">
-        <h1 class="hero__content--title">Febrero Promocional</h1>
-        <p class="hero__content--subtitle">
-          Productos seleccionados con 33% de descuento
-        </p>
-        <a class="hero__content--btn" href="#">Ver Consolas</a>
-      </article>
-    </section>
-
-    <main class="container">
-      <section class="productos">
-        <article class="productos__text">
-          <h2>Star Wars</h2>
-          <a href="pages/productos.html"
-            >Ver todos
-            <img src="assets/img/arrow__rigth.svg" alt="" />
-          </a>
-        </article>
-        <article class="productos__container" id="StarWars"></article>
-      </section>
-
-      <section class="productos">
-        <article class="productos__text">
-          <h2>Consolas</h2>
-          <a href="pages/productos.html"
-            >Ver todos
-            <img src="assets/img/arrow__rigth.svg" alt="" />
-          </a>
-        </article>
-        <article class="productos__container" id="consolas"></article>
-      </section>
-
-      <section class="productos">
-        <article class="productos__text">
-          <h2>Diversos</h2>
-          <a href="pages/productos.html"
-            >Ver todos
-            <img src="assets/img/arrow__rigth.svg" alt="" />
-          </a>
-        </article>
-        <article class="productos__container" id="diversos"></article>
-      </section>
+    <main class="form__container">
+      <h1>Iniciar Sesión</h1>
+      <form class="form__form">
+        <input type="email" placeholder="Escriba su correo electrónico" />
+        <input type="password" placeholder="Escriba su contraseña" />
+      </form>
     </main>
+
     <section class="contacto">
       <article class="contacto__text">
-        <img class="contacto__logo" src="assets/img/Logo.svg" alt="AluraGeek" />
+        <img
+          class="contacto__logo"
+          src="/assets/img/Logo.svg"
+          alt="AluraGeek"
+        />
 
         <ul class="contacto__menu">
           <li>
@@ -129,20 +98,6 @@
       <p>Desarrollado por Fernando Diaz</p>
       <span>2022</span>
     </footer>
-
-    <template id="productos">
-      <div class="productos__template">
-        <div class="productos__img">
-          <img src="" alt="Productos" id="templateImg" />
-        </div>
-        <div class="productos__content">
-          <h3 class="productos__title" id="title"></h3>
-          <p id="price" class="productos__price"></p>
-          <a class="productos__btn" id="verProduct" href="#"> Ver producto </a>
-        </div>
-      </div>
-    </template>
-
-    <script src="js/main.js" type="module"></script>
+    <script src="/js/main.js" type="module"></script>
   </body>
 </html>

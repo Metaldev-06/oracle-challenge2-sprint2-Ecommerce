@@ -1,0 +1,16 @@
+body {
+    background: var(--color-secondary); 
+}
+
+.productos__text .btn {
+    width: 163px;
+    height: 51px;
+    text-align: center;
+    color: white;
+    display: block;
+    font-weight: normal;
+}
+
+.productos__text {
+    margin-bottom: 1.5rem;
+}
